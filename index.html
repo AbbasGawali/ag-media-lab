@@ -10,37 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass {
-      background: rgba(17, 24, 39, 0.7);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .glow {
-      box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+    .red-glow {
+      box-shadow: 0 0 50px -10px rgba(220, 38, 38, 0.25);
     }
   </style>
 </head>
-<body class="bg-[#0B0F19] text-gray-200 antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col justify-between">
+<body class="bg-[#0D0D11] text-gray-200 antialiased selection:bg-red-600 selection:text-white min-h-screen flex flex-col justify-between">
 
   <!-- Navigation -->
-  <header class="fixed top-0 inset-x-0 z-50 glass border-b border-gray-800/80">
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#0D0D11]/90 backdrop-blur-md border-b border-white/10">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-indigo-500/30">
+        <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-red-600 via-red-500 to-rose-400 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-red-600/30">
           AG
         </div>
         <span class="font-bold text-lg tracking-tight text-white">AG MEDIA LAB</span>
       </div>
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
-        <a href="#features" class="hover:text-white transition">Features</a>
-        <a href="#pricing" class="hover:text-white transition">Pricing</a>
-        <a href="#terms" class="hover:text-white transition">Terms</a>
-        <a href="#refund" class="hover:text-white transition">Refund Policy</a>
-        <a href="#contact" class="hover:text-white transition">Contact</a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+        <a href="#features" class="hover:text-red-400 transition">Features</a>
+        <a href="#pricing" class="hover:text-red-400 transition">Pricing</a>
+        <a href="#terms" class="hover:text-red-400 transition">Terms</a>
+        <a href="#refund" class="hover:text-red-400 transition">Refund Policy</a>
+        <a href="#contact" class="hover:text-red-400 transition">Contact</a>
       </nav>
       <div>
-        <a href="#pricing" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold transition shadow-md shadow-indigo-600/30">
+        <a href="#pricing" class="px-4 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition shadow-md shadow-red-600/30">
           Get Pro
         </a>
       </div>
@@ -50,8 +44,8 @@
   <!-- Hero Section -->
   <main class="pt-32 pb-20">
     <section class="max-w-4xl mx-auto px-6 text-center space-y-6">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase">
-        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-semibold tracking-wide uppercase">
+        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
         <span>Version 1.0 Live</span>
       </div>
       
@@ -59,15 +53,15 @@
         High-Performance Media Utilities & Video Processing
       </h1>
       
-      <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
         Engineered for speed and precision. AG Media Lab builds mobile and cloud software enabling ultra-fast media merging, hardware-accelerated processing, and digital asset management.
       </p>
 
       <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#pricing" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-semibold text-base shadow-xl shadow-indigo-600/25 transition">
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-semibold text-base shadow-xl shadow-red-600/25 transition">
           View Pro Plans — ₹95 / month
         </a>
-        <a href="#features" class="w-full sm:w-auto px-8 py-3.5 rounded-xl glass hover:bg-gray-800/80 text-gray-300 font-semibold text-base transition">
+        <a href="#features" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-white font-semibold text-base transition">
           Explore Architecture
         </a>
       </div>
@@ -76,37 +70,37 @@
     <!-- Features -->
     <section id="features" class="max-w-6xl mx-auto px-6 pt-28">
       <div class="text-center space-y-3 mb-16">
-        <h2 class="text-xs font-bold text-indigo-400 tracking-widest uppercase">Engineered for Creators</h2>
+        <h2 class="text-xs font-bold text-red-500 tracking-widest uppercase">Engineered for Creators</h2>
         <h3 class="text-3xl font-bold text-white">Why AG Media Lab</h3>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="glass p-8 rounded-2xl space-y-4 hover:border-indigo-500/40 transition">
-          <div class="h-12 w-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl font-bold">
+        <div class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4 hover:border-red-500/50 transition">
+          <div class="h-12 w-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-500 text-2xl font-bold">
             ⚡
           </div>
           <h4 class="text-xl font-bold text-white">Zero-Loss Multi-Thread Engine</h4>
-          <p class="text-sm text-gray-400 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Chunk-based parallel downloading algorithms coupled with Android MediaMuxer hardware interleaving, delivering media merges in sub-seconds.
           </p>
         </div>
 
-        <div class="glass p-8 rounded-2xl space-y-4 hover:border-indigo-500/40 transition">
-          <div class="h-12 w-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl font-bold">
+        <div class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4 hover:border-red-500/50 transition">
+          <div class="h-12 w-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-500 text-2xl font-bold">
             🛡️
           </div>
           <h4 class="text-xl font-bold text-white">Local-First Privacy Architecture</h4>
-          <p class="text-sm text-gray-400 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             All transformations occur on-device within isolated application sandbox cache, ensuring zero telemetry or unauthorized retention of media content.
           </p>
         </div>
 
-        <div class="glass p-8 rounded-2xl space-y-4 hover:border-indigo-500/40 transition">
-          <div class="h-12 w-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl font-bold">
+        <div class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4 hover:border-red-500/50 transition">
+          <div class="h-12 w-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-500 text-2xl font-bold">
             ♾️
           </div>
           <h4 class="text-xl font-bold text-white">Full Bitrate & Codec Support</h4>
-          <p class="text-sm text-gray-400 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Support for high-efficiency MP4, AAC, and WebM streams up to 4K resolution with non-decreasing PTS preservation.
           </p>
         </div>
@@ -116,14 +110,14 @@
     <!-- Pricing Section (Mandatory for Payment Gateways) -->
     <section id="pricing" class="max-w-4xl mx-auto px-6 pt-28">
       <div class="text-center space-y-3 mb-16">
-        <h2 class="text-xs font-bold text-indigo-400 tracking-widest uppercase">Transparent Pricing</h2>
+        <h2 class="text-xs font-bold text-red-500 tracking-widest uppercase">Transparent Pricing</h2>
         <h3 class="text-3xl font-bold text-white">Choose Your Access Tier</h3>
         <p class="text-sm text-gray-400">Cancel anytime with 1-click in application settings.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         <!-- Starter Tier -->
-        <div class="glass p-8 rounded-2xl flex flex-col justify-between space-y-6">
+        <div class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl flex flex-col justify-between space-y-6">
           <div class="space-y-4">
             <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Community</span>
             <div class="flex items-baseline space-x-1">
@@ -137,30 +131,30 @@
               <li class="flex items-center space-x-2"><span>✓</span><span>Basic audio extraction</span></li>
             </ul>
           </div>
-          <button class="w-full py-3 rounded-xl bg-gray-800 text-gray-300 text-sm font-semibold cursor-default">Current Free Plan</button>
+          <button class="w-full py-3 rounded-xl bg-white/5 border border-white/10 text-gray-400 text-sm font-semibold cursor-default">Current Free Plan</button>
         </div>
 
         <!-- Pro Tier -->
-        <div class="glass p-8 rounded-2xl flex flex-col justify-between space-y-6 border-indigo-500 glow relative">
-          <div class="absolute -top-3 right-6 px-3 py-1 bg-indigo-600 rounded-full text-[11px] font-bold text-white uppercase tracking-wider">
+        <div class="bg-white/[0.03] border-2 border-red-500 red-glow p-8 rounded-2xl flex flex-col justify-between space-y-6 relative">
+          <div class="absolute -top-3 right-6 px-3 py-1 bg-red-600 rounded-full text-[11px] font-bold text-white uppercase tracking-wider">
             Popular
           </div>
           <div class="space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Pro Creator</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-red-500 font-bold">Pro Creator</span>
             <div class="flex items-baseline space-x-2">
               <span class="text-4xl font-extrabold text-white">₹95</span>
               <span class="text-gray-400 text-sm">/ month ($1.15 USD)</span>
             </div>
             <p class="text-xs text-gray-400">High speed, multi-stream parallel processing for power users.</p>
             <ul class="space-y-2 text-sm text-gray-200 pt-4">
-              <li class="flex items-center space-x-2 text-indigo-400 font-bold"><span>✓</span><span class="text-gray-200">Ultra-fast 4-worker chunk parallel downloads</span></li>
-              <li class="flex items-center space-x-2 text-indigo-400 font-bold"><span>✓</span><span class="text-gray-200">1080p, 2K & 4K Ultra-HD merging</span></li>
-              <li class="flex items-center space-x-2 text-indigo-400 font-bold"><span>✓</span><span class="text-gray-200">Ad-free seamless workflow</span></li>
-              <li class="flex items-center space-x-2 text-indigo-400 font-bold"><span>✓</span><span class="text-gray-200">High-bitrate AAC 320kbps audio</span></li>
-              <li class="flex items-center space-x-2 text-indigo-400 font-bold"><span>✓</span><span class="text-gray-200">Priority customer support</span></li>
+              <li class="flex items-center space-x-2 text-red-500 font-bold"><span>✓</span><span class="text-gray-200">Ultra-fast 4-worker chunk parallel downloads</span></li>
+              <li class="flex items-center space-x-2 text-red-500 font-bold"><span>✓</span><span class="text-gray-200">1080p, 2K & 4K Ultra-HD merging</span></li>
+              <li class="flex items-center space-x-2 text-red-500 font-bold"><span>✓</span><span class="text-gray-200">Ad-free seamless workflow</span></li>
+              <li class="flex items-center space-x-2 text-red-500 font-bold"><span>✓</span><span class="text-gray-200">High-bitrate AAC 320kbps audio</span></li>
+              <li class="flex items-center space-x-2 text-red-500 font-bold"><span>✓</span><span class="text-gray-200">Priority customer support</span></li>
             </ul>
           </div>
-          <button class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold shadow-lg shadow-indigo-600/30 transition">
+          <button class="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-bold shadow-lg shadow-red-600/30 transition">
             Subscribe Now via UPI / Card
           </button>
         </div>
@@ -170,60 +164,60 @@
     <!-- Legal & Mandatory Gateway Compliance Policies -->
     <section class="max-w-4xl mx-auto px-6 pt-24 space-y-12">
       <!-- Terms -->
-      <div id="terms" class="glass p-8 rounded-2xl space-y-4">
+      <div id="terms" class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4">
         <h3 class="text-xl font-bold text-white">Terms & Conditions</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">
+        <p class="text-xs text-gray-300 leading-relaxed">
           Welcome to AG Media Lab. By accessing or using our mobile software and media tools, you agree to be bound by these Terms of Service. AG Media Lab develops software utility applications that process media streams directly on user devices. Users are responsible for ensuring that their use complies with local copyright laws, intellectual property rights, and fair use guidelines. The software is provided "as is" without warranties of any kind.
         </p>
       </div>
 
       <!-- Privacy Policy -->
-      <div id="privacy" class="glass p-8 rounded-2xl space-y-4">
+      <div id="privacy" class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4">
         <h3 class="text-xl font-bold text-white">Privacy Policy</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">
+        <p class="text-xs text-gray-300 leading-relaxed">
           AG Media Lab values user confidentiality. We do not sell, rent, or monetize personal user data. Subscription transactions are processed through certified, PCI-DSS compliant payment aggregators (such as Cashfree Payments). All media parsing, multiplexing, and decoding take place locally on the user's client hardware. We do not maintain remote copies or logs of content processed through our client software.
         </p>
       </div>
 
       <!-- Cancellation & Refund Policy -->
-      <div id="refund" class="glass p-8 rounded-2xl space-y-4">
+      <div id="refund" class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4">
         <h3 class="text-xl font-bold text-white">Cancellation & Refund Policy</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">
-          Subscribers may cancel their monthly recurring plan at any time through application settings or by contacting customer support. Upon cancellation, your access remains active until the end of the current billing cycle. If you experience technical defects, failed downloads, or billing inaccuracies, we offer a <strong>full refund within 7 days</strong> of the initial transaction date. To request a refund, email our support team with your transaction ID.
+        <p class="text-xs text-gray-300 leading-relaxed">
+          Subscribers may cancel their monthly recurring plan at any time through application settings or by contacting customer support. Upon cancellation, your access remains active until the end of the current billing cycle. If you experience technical defects, failed downloads, or billing inaccuracies, we offer a <strong class="text-white">full refund within 7 days</strong> of the initial transaction date. To request a refund, email our support team with your transaction ID.
         </p>
       </div>
 
       <!-- Shipping & Delivery Policy -->
-      <div id="delivery" class="glass p-8 rounded-2xl space-y-4">
+      <div id="delivery" class="bg-white/[0.03] border border-white/10 p-8 rounded-2xl space-y-4">
         <h3 class="text-xl font-bold text-white">Delivery Policy</h3>
-        <p class="text-xs text-gray-400 leading-relaxed">
+        <p class="text-xs text-gray-300 leading-relaxed">
           AG Media Lab provides exclusively digital software licenses and in-app subscriptions. Delivery is instantaneous upon successful payment verification. Pro features and account quotas are unlocked immediately on your device without shipping physical goods.
         </p>
       </div>
 
       <!-- Contact Us -->
-      <div id="contact" class="glass p-8 rounded-2xl space-y-4 border border-indigo-500/30">
+      <div id="contact" class="bg-white/[0.03] border border-red-500/40 p-8 rounded-2xl space-y-4">
         <h3 class="text-xl font-bold text-white">Contact & Support</h3>
-        <div class="text-xs text-gray-400 space-y-2">
-          <p><strong class="text-gray-200">Legal Business Name:</strong> AG MEDIA LAB</p>
-          <p><strong class="text-gray-200">Proprietor:</strong> Mohammad Abbas Salim Gawali</p>
-          <p><strong class="text-gray-200">Email:</strong> <a href="mailto:abbasgawali111@gmail.com" class="text-indigo-400 hover:underline">abbasgawali111@gmail.com</a></p>
-          <p><strong class="text-gray-200">Operating Address:</strong> Maharashtra, India</p>
-          <p><strong class="text-gray-200">Support Hours:</strong> Monday – Saturday, 10:00 AM – 7:00 PM IST</p>
+        <div class="text-xs text-gray-300 space-y-2">
+          <p><strong class="text-white">Legal Business Name:</strong> AG MEDIA LAB</p>
+          <p><strong class="text-white">Proprietor:</strong> Mohammad Abbas Salim Gawali</p>
+          <p><strong class="text-white">Email:</strong> <a href="mailto:abbasgawali111@gmail.com" class="text-red-400 hover:underline">abbasgawali111@gmail.com</a></p>
+          <p><strong class="text-white">Operating Address:</strong> Maharashtra, India</p>
+          <p><strong class="text-white">Support Hours:</strong> Monday – Saturday, 10:00 AM – 7:00 PM IST</p>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="glass border-t border-gray-800/80 py-8 mt-20">
+  <footer class="bg-[#0A0A0E] border-t border-white/10 py-8 mt-20">
     <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 space-y-4 sm:space-y-0">
       <p>© 2026 AG MEDIA LAB. All rights reserved.</p>
       <div class="flex space-x-6">
-        <a href="#terms" class="hover:text-gray-400 transition">Terms</a>
-        <a href="#privacy" class="hover:text-gray-400 transition">Privacy</a>
-        <a href="#refund" class="hover:text-gray-400 transition">Refunds</a>
-        <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+        <a href="#terms" class="hover:text-red-400 transition">Terms</a>
+        <a href="#privacy" class="hover:text-red-400 transition">Privacy</a>
+        <a href="#refund" class="hover:text-red-400 transition">Refunds</a>
+        <a href="#contact" class="hover:text-red-400 transition">Contact</a>
       </div>
     </div>
   </footer>
